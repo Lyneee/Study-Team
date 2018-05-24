@@ -1,0 +1,561 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Clarisonic</title>
+<link rel="shortcut icon" href="https://www.clarisonic.com/on/demandware.static/Sites-Clarisonic-US-Site/-/default/dwbd20a15e/images/favicon.ico" />
+<!--[if !mso]><!-->
+<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+<!--<![endif]-->
+<style type="text/css">
+  @media screen {}
+*, body, div, p, a, li, table, td, table td {
+ -webkit-text-size-adjust: none !important;
+ -moz-text-size-adjust: none !important;
+ -o-text-size-adjust: none !important;
+ -ms-text-size-adjust: none !important;
+}
+/* PREVENTS BLUE BORDER ON LINKED IMAGES, WRAPPED IN HTML COMMENT TO PREVENT LOTUS NOTES FROM NOT USING THIS STYLE*/ 
+<!--
+img, img a {
+ border-style: none !important;
+ border: none !important;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+-->
+/* GENERAL STYLING */
+body, table, td, table td, img {
+ font-family: Arial, Helvetica, sans-serif;
+ border: none;
+ margin: 0px;
+ padding: 0px;
+}
+/* YAHOO STRIPS THE INLINE STYLING OF THE BODY TAG, SO THIS IS A FALLBACK */
+body {
+ background: #ffffff;
+}
+/*ALLOWS TEXT WRAPPING, CONTROLS LINE HEIGHT, AND PREVENTS ADDED BORDERS IN OUTLOOK */
+body, table, td, table td {
+ mso-line-height-rule: exactly;
+ mso-table-lspace: 0;
+ mso-table-rspace: 0;
+ border-collapse: collapse;
+}
+/* OUTLOOK.COM FIXES. OUTLOOK.COM AUTOMATICALLY ADDS A CLASS OF "ExternalClass" TO YOUR BODY TAG, WHICH IS WHY THESE WORK */
+/*RESETS OUTLOOK.COM LINE HEIGHT TO 100% INSTEAD OF ITS DEFAULT OF 131% */
+.ExternalClass * {
+ line-height: 100%;
+ width: 100%;
+}
+/* PREVENTS GREEN DEFAULT COLOR */
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited, h4, h5, h6, .t_cht, p {
+ color: inherit !important;
+}
+/* ADD THIS CLASS TO ADDRESSES, PHONE NUMBERS, AND DATES TO PREVENT AUTO BLUE LINKING IN CLIENTS LIKE GMAIL AND IOS */
+.blueLinkFix {
+ color: #666666 !important;
+}
+/* What it does: A work-around for email clients meddling in triggered links. */
+*[x-apple-data-detectors],  /* iOS */ .x-gmail-data-detectors,    /* Gmail */ .x-gmail-data-detectors *, .aBn {
+ border-bottom: 0 !important;
+ cursor: default !important;
+ color: inherit !important;
+ text-decoration: none !important;
+ font-size: inherit !important;
+ font-family: inherit !important;
+ font-weight: inherit !important;
+ line-height: inherit !important;
+}
+.blueFix span {
+ border: none!important;
+ color: inherit!important;
+}
+
+@media only screen and (max-device-width: 480px), screen and (max-width: 480px) {
+/*------------MOBILE HIDE AND SHOW---------------*/
+.mobileHide {
+ display: none !important;
+ height: 0px !important;
+ width: 0px !important;
+ max-height: 0px !important;
+ max-width: 0px !important;
+ font-size: 0px !important;
+ line-height: 0px !important;
+ overflow: hidden !important;
+}
+.mobileShow {
+ display: block !important;
+ height: auto !important;
+ width: auto !important;
+ max-height: inherit !important;
+ max-width: inherit !important;
+ font-size: 10px !important;
+ line-height: 10px !important;
+ overflow : visible !important;
+ border: none !important;
+ visibility: visible !important;
+}
+.mobileShowText {
+ display: block !important;
+ height: auto !important;
+ width: auto !important;
+ max-height: inherit !important;
+ max-width: inherit !important;
+ overflow : visible !important;
+ border: none !important;
+ visibility: visible !important;
+ padding:20px 0 25px !important;
+ font-family:'Lato',Arial,Helvetica,sans-serif !important;
+ font-weight:300 !important;
+ font-size:16px !important;
+ line-height:20px !important;
+ color:#4b4d50 !important;
+ text-align:center !important;
+}
+.photo {
+ width: 100% !important;
+ height: auto !important;
+}
+.buttonbottom{
+  padding-top:5px !important;
+ padding-bottom:40px !important;
+}
+.button{
+  font-size:18px !important;
+ width:210 !important;
+  line-height:50px !important;
+}
+.btnLg {
+ padding-top:30px !important;
+ padding-bottom:30px !important;
+}
+.buttonwidth{
+  font-size:18px !important;
+  font-weight:normal !important;
+ width:210px !important;
+  line-height:50px !important;
+}
+.social {
+ width: 100% !important;
+ height: auto !important;
+ max-width:73px !important;
+}
+/*-------------ALIGNMENT-------------------------*/
+.drop {
+ width: 100% !important;
+ padding-left: 0 !important;
+ padding-right: 0 !important;
+ text-align: left;
+ display: block !important;
+ border-left: 0px !important;
+ border-right: 0px !important;
+}
+.centerImageRating {
+ text-align: center;
+ width: 80px !important;
+ margin: 0 auto !important;
+}
+ .mobIcon{
+  padding:0 20px;
+
+  }
+.centerImageCTA {
+ text-align: center;
+ width: 180px !important;
+ margin: 0 auto !important;
+}
+.logo{
+ width:127px !important;
+ height: auto !important;
+}
+.small{
+ width:220px !important;
+}
+.small2{
+ font-size:27px !important;
+ line-height:36px !important;
+ padding-top:32px !important;
+}
+.whyShop{
+ font-size:30px !important;
+ line-height:42px !important;
+ padding:32px 0 0 0 !important;
+}
+.bnText {
+ font-size:17px !important;
+ line-height:18px !important;}
+ .bnLegal {
+ font-size:19px !important;
+ line-height:21px !important;
+ padding-right:30px !important; 
+ padding-left:30px !important;}
+.buttonbottom{
+ padding-bottom:30px !important;
+}
+  .padBotm0 {
+     padding-bottom:0px !important;
+  }
+    .padBotm30 {
+     padding-bottom:30px !important;
+  }
+   .padTop40 {
+      padding-top:40px !important;
+ }
+  .padBotm40 {
+     padding-bottom:40px !important;
+ }
+     .padTop10 {
+      padding-top:10px !important;
+ }
+  .padBotm30 {
+     padding-bottom:30px !important;
+ }
+  .padRight38 {
+    padding-right:38px !important;
+  }
+.buttonbottomleft{
+ padding-bottom:34px !important;
+ padding-left:30px !important;
+ padding-right:30px !important;
+}
+.btnLg {
+ padding-top:25px !important;
+  padding-bottom:25px !important;
+font-size:19px !important;
+ line-height:21px !important;
+  width:210px !important;
+}
+.mobcolumn{
+ width:135px !important;
+}
+
+
+.headline{
+ font-size:49px !important;
+ line-height:51px !important;
+  padding-bottom:15px !important;
+}
+  .headline2{
+ font-size:26px !important;
+ line-height:30px !important;
+  padding-bottom:2px !important;
+}
+.headlineleft{
+ font-size:44px !important;
+ line-height:46px !important;
+ padding-left:30px !important;
+ padding-right:30px !important;
+}
+.mobpad{
+ padding-top:17px !important;
+ padding-bottom:19px !important;
+ padding-right:8px !important;
+}
+  .mobileleftsmall{
+ padding-left:16px !important;
+ padding-right:16px !important;
+}
+.nopad{
+  padding:0 !important;
+  }
+.mobilecopy{
+ font-size:21px !important;
+ line-height:25px !important;
+  padding-bottom:25px !important;
+  padding-left:80px !important;
+  padding-right:80px !important;
+}
+.mobilecopyleft{
+ font-size:19px !important;
+ line-height:22px !important;
+ padding-left:30px !important;
+ padding-right:30px !important;
+  padding-bottom:25px !important;
+}
+.iconcontainer{
+ width:320px !important;
+}
+.mobileleft{
+ padding-left:30px !important;
+ padding-right:30px !important;
+}
+  .subhead {
+   font-size:18px !important;
+ line-height:22px !important;
+  padding-top:8px !important;}
+.mobilecopysmall{
+ font-size:19px !important;
+ line-height:22px !important;
+ padding-left:21px !important;
+ padding-right:21px !important;
+}
+  .secondaryheadline{
+ font-size:27px !important;
+ line-height:29px !important;
+    padding-bottom:10px !important;
+}
+  .mobiletop{
+ padding-top:17px !important;
+}
+  .bodyheadline{
+ font-size:24px !important;
+ line-height:26px !important;
+    padding-bottom:10px !important;
+}
+/*---------WIDTH----------*/
+.widthFull {
+ width: 100% !important;
+}
+ 
+.icon {
+ width: auto !important;
+ height: 48px !important;
+}
+.mobileBorder {
+ border-bottom: solid 1px #e3e3e3 !important;
+}
+  .stars{
+    width:102px !important;
+    height:auto !important;
+}
+.mobpad21{
+ padding-right:21px !important;
+ padding-left:21px !important;
+}
+.mia{
+    font-size:20px !important;
+    padding-bottom:40px !important;
+    padding-top:32px !important;
+}
+
+.bodyheadleftsmall{
+padding-left:21px !important;
+padding-right:21px !important;
+font-size:24px !important;
+line-height:24px !important;
+}
+  .center{
+ text-align:center !important;
+ margin:0 auto !important;
+}
+.starsbottom{
+ padding-bottom:5px !important;
+}
+  .learnmore{
+ font-size:18px !important;
+ line-height:20px !important;
+}
+.height0 {
+ height:0 !important;
+}
+.padtop{
+ padding-top:40px !important;
+}
+  .padTop20 {
+  padding-top:20px !important; }
+.padTop15 {
+  padding-top:15px !important; }
+  .padTop10 {
+  padding-top:10px !important; }
+  .padTop0 {
+  padding-top:0px !important; }
+  .morepadtop{
+ padding-top:87px !important;
+}
+  .morepadbottom{
+    padding-bottom:87px !important;
+  }
+.lmpadding{
+ padding-top:24px !important;
+ padding-bottom:74px !important;
+}
+.lmpadding2{
+ padding-top:24px !important;
+ padding-bottom:30px !important;
+}
+.lmpadding3{
+ padding-top:24px !important;
+ padding-bottom:18px !important;
+}
+  .alignLeft {
+  padding-left:30px !important;
+  text-align:left !important;
+  }
+}
+@media only screen and (max-device-width: 385px), screen and (max-width: 385px) {
+ .mobIcon{
+  height:160px !important;
+  width:auto !important;
+  padding:0 10px;
+
+  }
+ }
+</style>
+  <!--[if mso]>
+<style type="text/css">
+body, table, td, a {font-family: Arial, Helvetica, sans-serif !important;}
+.mobileleftsmall, .bodyheadleftsmall, .bodyheadline{font-weight:700 !important;}
+</style>
+<![endif]-->
+</head>
+<body style="margin:0; padding:0; border:none; -ms-text-size-adjust:none; -webkit-text-size-adjust:none;" bgcolor="#f7f7f8" border="0">
+
+<!--BEGIN AMPSCRIPT--> 
+<table cellpadding="0" bgcolor="#f7f7f8"  cellspacing="0" border="0" align="center" width="100%" style="table-layout:fixed; background-color: #f7f7f8;">
+  <tr>
+    <td>
+    </td>
+  </tr>
+</table>
+<!--END AMPSCRIPT--> 
+
+<!--BEGIN PREVIEW TEXT AND OPEN TRACKING DIV-->
+<table cellpadding="0" cellspacing="0" border="0" align="center" style="table-layout:fixed;">
+  <tr>
+    <td>
+      <div style="display:none; font-size:0; line-height:0; max-height:0px; max-width:0px; opacity:0; overflow:hidden; mso-hide:all; font-family: sans-serif; color: #ffffff;"> <!--begin preview text-->%%=v(@preview_text)=%%<!--end preview text-->
+        <!--begin opencounter--><custom name="opencounter" type="tracking"><!--end opencounter-->
+      </div>
+    </td>
+  </tr>
+  <!--Begin ReturnPath Pixels-->
+  <tr>
+   <td>
+    <img src="https://pixel.app.returnpath.net/pixel.gif?r=9bdec38b92f77699dbaa4cba561dc86e3b29edb6" width="1" height="1" />
+    </td>
+  </tr>
+  <tr>
+   <td>
+<img src="https://pixel.inbox.exacttarget.com/pixel.gif?r=9bdec38b92f77699dbaa4cba561dc86e3b29edb6" width="1" height="1" />
+    </td>
+  </tr>
+<!--End ReturnPath Pixels-->
+</table>
+<!--END PREVIEW TEXT AND OPEN TRACKING DIV-->
+
+      
+   <!--BEGIN BODY CONTENT - This 100% table centers the body content-->
+      <table style="background-color: #f7f7f8;" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td bgcolor="#f7f7f8" width="640" align="center" class="widthFull"> 
+     
+            <!-- BEGIN FIXED WIDTH WRAPPER TABLE -->
+            <table class="widthFull" width="640"  style="table-layout: fixed; width: 640px;" align="center" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center" valign="top" style="padding:20px 0 0 0;">
+                    <!-- BEGIN TIP 1 -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+ <tr><td style="background-color:#f7f7f8 ; min-height:20px; min-width:100%; line-height:20px;" width="100%" bgcolor="#f7f7f8 " height="20"></td></tr>
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 0 0;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td bgcolor="#ffffff" align="center" valign="top" style="padding:0 0 0 0;">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" dir="ltr">
+                                <tr>
+                                  
+                                  <td class="drop" width="50%" align="right" valign="middle" style="padding:30px 0;">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td class="mobileleftsmall center" align="left" valign="top" style="padding:0px 0 3px 60px; font-family:'Lato',Arial,Helvetica,sans-serif; font-weight:400;font-size:25px; mso-line-height-rule:exactly; line-height:27px; color:#4b4d50;"><strong>Exclusive Lip Brush</strong></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="mobilecopysmall center" align="left" valign="top" style="padding:0 30px 0 60px; font-family:'Lato',Arial,Helvetica,sans-serif; font-weight:300; font-size:22px; mso-line-height-rule:exactly; line-height:24px; color:#4b4d50;">Remove even the most<br class="mobileHide" />stubborn long-wearing<br class="mobileHide" />lipstick with our<br class="mobileHide" />limited-edition lip brush.</td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <td class="drop" width="50%" align="left" valign="middle"><a href="https://www.clarisonic.com/lip-cleansing-kit-CL400.html?%%=v(@tracking)=%%body-exclusive-img" alias="body-exclusive-img" target="_blank"><img src="http://image.exct.net/lib/fe5f1570736c077b7611/m/4/d1d3ace4-db6d-45df-b561-e217f9d678be.jpg?b=1522842502000" border="0" width="320" alt="" style="display:block;" class="photo" /></a></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+          
+</table>
+                    <!-- END TIP 1 -->
+
+
+<!-- BEGIN TIP 2 -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+ <tr><td style="background-color:#f7f7f8 ; min-height:20px; min-width:100%; line-height:20px;" width="100%" bgcolor="#f7f7f8 " height="20"></td></tr>
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 0 0;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td bgcolor="#ffffff" align="center" valign="top" style="padding:0 0 0 0;">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" dir="rtl">
+                                <tr>
+                                  
+                                  <td class="drop" width="50%" align="right" valign="middle"  style="padding:30px 0;">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td class="mobileleftsmall center" align="left" valign="top" style="padding:0px 0 3px 60px; font-family:'Lato',Arial,Helvetica,sans-serif; font-weight:400;font-size:25px; mso-line-height-rule:exactly; line-height:27px; color:#4b4d50;"><strong>NYX Epic Ink<br class="mobileHide" />Lip Dye</strong></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="mobilecopysmall center" align="left" valign="top" style="padding:0 30px 0 60px; font-family:'Lato',Arial,Helvetica,sans-serif; font-weight:300; font-size:22px; mso-line-height-rule:exactly; line-height:24px; color:#4b4d50;">Enjoy vibrant,<br class="mobileHide" />long-lasting color, <br class="mobileHide" />all day long.</td>
+                                      </tr>
+                                      
+                                    </table>
+                                  </td>
+                                  <td class="drop" width="50%" align="left" valign="middle"><a href="https://www.clarisonic.com/lip-cleansing-kit-CL400.html?%%=v(@tracking)=%%body-nyx-img" alias="body-nyx-img" target="_blank"><img src="http://image.exct.net/lib/fe5f1570736c077b7611/m/4/e42212b0-159d-41ac-a629-0a495208ccb9.jpg?b=1522842503000" border="0" width="320" alt="" style="display:block;" class="photo" /></a></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+          
+</table>
+                    <!-- END TIP 2 -->
+
+
+<!-- BEGIN TIP 3 -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+ <tr><td style="background-color:#f7f7f8 ; min-height:20px; min-width:100%; line-height:20px;" width="100%" bgcolor="#f7f7f8 " height="20"></td></tr>
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 0 0;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td bgcolor="#ffffff" align="center" valign="top" style="padding:0 0 0 0;">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" dir="ltr">
+                                <tr>
+                                  
+                                  <td class="drop" width="50%" align="right" valign="middle" style="padding:30px 0;">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td class="mobileleftsmall center" align="left" valign="top" style="padding:0px 0 3px 60px; font-family:'Lato',Arial,Helvetica,sans-serif; font-weight:400;font-size:25px; mso-line-height-rule:exactly; line-height:27px; color:#4b4d50;"><strong>Mini Refreshing<br class="mobileHide" />Gel Cleanser</strong></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="mobilecopysmall center" align="left" valign="top" style="padding:0 30px 0 60px; font-family:'Lato',Arial,Helvetica,sans-serif; font-weight:300; font-size:22px; mso-line-height-rule:exactly; line-height:24px; color:#4b4d50;">Lather your skin with<br class="mobileHide" />our refreshing gel for<br class="mobileHide" />softer, more supple lips.</td>
+                                      </tr>
+                                      
+                                    </table>
+                                  </td>
+                                  <td class="drop" width="50%" align="left" valign="middle"><a href="https://www.clarisonic.com/lip-cleansing-kit-CL400.html?%%=v(@tracking)=%%body-mini-img" alias="body-mini-img" target="_blank"><img src="http://image.exct.net/lib/fe5f1570736c077b7611/m/4/1a4b7305-3a38-424b-bebd-d1d5ac64a5e8.jpg?b=1522842506000" border="0" width="320" alt="" style="display:block;" class="photo" /></a></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+          
+</table>
+
+                </td>
+              </tr>
+            </table>
+            <!-- END FIXED WIDTH WRAPPER TABLE --> 
+        </td></tr></table>   
+            <!--END BODY CONTENT - This 100% table centers the body content-->
+
+</body>
+</html>
